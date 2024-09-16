@@ -10,7 +10,7 @@ const RezeptPage = () => {
 
     (async function () {
       try {
-        const response = await fetch(`${url}/rezept`);
+        const response = await fetch(`https://rezept.onrender.com/rezept`);
         const result = await response.json();
         console.log(result);
         setRezept(result);

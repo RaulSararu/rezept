@@ -10,7 +10,7 @@ const RezeptDetail = () => {
   const url = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
-    fetch(`${url}/rezept/${id}`)
+    fetch(`https://rezept.onrender.com/rezept/${id}`)
       .then((response) => response.json())
       .then((data) => setRezept(data))
       .catch((err) => console.log(err));

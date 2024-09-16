@@ -15,7 +15,7 @@ const CreateRezept = () => {
 
     const newRezept = { title, zutaten, zubereitung, zeit };
 
-    await fetch(`${url}/rezept`, {
+    await fetch(`https://rezept.onrender.com//rezept`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
